@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 325193177}
   - component: {fileID: 325193178}
   m_Layer: 0
-  m_Name: Body Colours
+  m_Name: Body Colour Updater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2213,7 +2213,7 @@ GameObject:
   - component: {fileID: 1811870086}
   - component: {fileID: 1811870087}
   m_Layer: 0
-  m_Name: Bonnet Colours
+  m_Name: Bonnet Colour Updater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
