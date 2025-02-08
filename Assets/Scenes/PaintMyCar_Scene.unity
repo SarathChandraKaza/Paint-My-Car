@@ -285,8 +285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyMaterial: {fileID: 2100000, guid: 29fd7048f5a95104483f2bcc722c470f, type: 2}
-  initialColor: {r: 0.03795302, g: 1, b: 0, a: 0}
-  newColour: {r: 0.9365845, g: 0, b: 1, a: 0}
+  initialColour: {r: 0.8352941, g: 0, b: 0, a: 1}
+  newColour: {r: 0.41568628, g: 0.050980393, b: 0.6784314, a: 1}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,6 +2200,8 @@ MonoBehaviour:
   changeBonnetColour: {fileID: 88190111}
   changeBodyColour: {fileID: 643778960}
   undoButton: {fileID: 1089528907}
+  bodyChanger: {fileID: 325193178}
+  bonnetChanger: {fileID: 1811870087}
 --- !u!1 &1811870085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,8 +2247,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonnetMaterial: {fileID: 2100000, guid: a353aeb8f67a71e4282e91f2636c8257, type: 2}
-  initialColor: {r: 1, g: 0, b: 0, a: 1}
-  newColour: {r: 0, g: 0.0016341209, b: 1, a: 1}
+  initialColour: {r: 0.039215688, g: 0.039215688, b: 0.039215688, a: 1}
+  newColour: {r: 0.9607843, g: 0.88235295, b: 0.6431373, a: 1}
 --- !u!1 &1821245547
 GameObject:
   m_ObjectHideFlags: 0

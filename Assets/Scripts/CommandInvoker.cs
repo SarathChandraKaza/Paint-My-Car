@@ -13,7 +13,14 @@ public class CommandInvoker : MonoBehaviour
     }
     public void UndoCommand()
     {
-        var lastCommand = commandsStack.Pop();
-        lastCommand.Undo();
+        if(commandsStack.Count > 0)
+        {
+            var lastCommand = commandsStack.Pop();
+            lastCommand.Undo();
+        }
+        else
+        {
+            Debug.LogError("Stack is empty");
+        }
     }
 }

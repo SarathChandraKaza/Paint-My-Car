@@ -3,21 +3,16 @@ using UnityEngine;
 public class BodyColourChanger : MonoBehaviour, ICommand
 {
     [SerializeField] Material bodyMaterial;
-    [SerializeField] Color initialColor;
+    [SerializeField] Color initialColour;
     [SerializeField] Color newColour;
-
-    private void Start()
-    {
-        Debug.Log("Name of body's material is: " + bodyMaterial);
-    }
     public void Execute()
     {
-        Debug.Log("Changing Body's colour to new colour");
-        bodyMaterial.SetColor("_Color", newColour);
+        Debug.Log("Changing colour of body to new Colour");
+        bodyMaterial.color = newColour;
     }
     public void Undo()
     {
-        Debug.Log("Resetting body's colour to initial colour");
-        bodyMaterial.SetColor("_Color", initialColor);
+        Debug.Log("Undoing colour of body to initial Colour");
+        bodyMaterial.color = initialColour;
     }
 }

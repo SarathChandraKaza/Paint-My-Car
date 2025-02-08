@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] Button changeBodyColour;
     [SerializeField] Button undoButton;
 
+    [Header("References to the ICommand Classes")]
+    [SerializeField] BodyColourChanger bodyChanger;
+    [SerializeField] BonnetColourChanger bonnetChanger;
+
     private void Start()
     {
         changeBonnetColour.onClick.AddListener(UpdateBonnetColour);
@@ -23,12 +27,10 @@ public class GameManager : MonoBehaviour
     }
     private void UpdateBodyColour()
     {
-        ICommand command = new BodyColourChanger();
-        commandInvoker.ExecuteCommand(command);
+        commandInvoker.ExecuteCommand(bodyChanger);
     }
     private void UpdateBonnetColour()
     {
-        ICommand command = new BonnetColourChanger();
-        commandInvoker.ExecuteCommand(command);
+        commandInvoker.ExecuteCommand(bonnetChanger);
     }
 }
